@@ -46,10 +46,10 @@ Before analysis, the dataset required several preprocessing steps:
 - Removed duplicate records, including duplicates based on Row ID 
 - Dropped unnecessary columns (Postal Code, Row ID)
 - Converted date columns (Order Date, Ship Date) to datetime format
-- Handled missing values:
-  -- Handled missing values in Sales and Profit using median imputation
-  -- Recovered missing Order Dates using records from the same Order ID (Reconstructed missing Order Dates using forward/backward fill grouped by Order ID)
-  -- Removed remaining rows with missing Order Dates
+- Handled missing values :  
+    - Handled missing values in Sales and Profit using median imputation
+    - Recovered missing Order Dates using records from the same Order ID (Reconstructed missing Order Dates using forward/backward fill grouped by Order ID)
+    - Removed remaining rows with missing Order Dates
   
 This ensured the dataset was clean, consistent, and ready for analysis.
 
